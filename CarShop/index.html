@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoVerse</title>
+</head>
+<body style="background-color: #111827;">
+    <h1 style="text-align: center; color: white;" class="changer">AutoVerse </h1>
+    <p id="loading" class="changer" style="text-align: center; color: white;">Loading...</p>
+    <button onclick="changeBgcolorred()">Light Mode</button>
+    <button onclick="changeBgcolororiginal()">Dark Mode</button>
+    <p style="text-align: right; color: white;" id="clock" class="changer"></p>
+    <script>
+       setInterval(() => {
+        let now = new Date();
+        document.getElementById("clock").innerText = now.toLocaleTimeString();
+        }, 1000);
+
+            window.addEventListener("load", function() {
+        setTimeout(() => {
+            document.getElementById("loading").innerText = "Welcome 🚗";
+        }, 1000);
+    });
+    
+        function changeBgcolorred() {
+            document.body.style.backgroundColor = "white";
+            let elements = document.getElementsByClassName("changer")
+            console.log(elements)
+            let i = 0;
+            while (i < elements.length) {
+                document.getElementsByClassName("changer")[i].style.color = "black";
+                i++;
+            }
+            
+        }
+        function changeBgcolororiginal(){
+            document.body.style.backgroundColor = "#111827"
+            let elements = document.getElementsByClassName("changer")
+            let i = 0;
+            console.log(elements)
+            while (i < elements.length) {
+                document.getElementsByClassName("changer")[i].style.color = "white";
+                i++;
+            }
+        }
+    
+    </script>
+    <hr><br>
+    <p style="color: white;" class="changer">Sedan</p>
+    <table style="color: red;" border="3px" align="center">
+        <tr>
+            <th>
+                <p class="changer">Brand</p>
+            </th>
+            <th>
+                <p class="changer">Model</p>
+            </th>
+            <th>
+                <p class="changer">Color</p>
+            </th>
+            <th>
+                <p class="changer">Year</p>
+            </th>
+            <th>
+                <p class="changer">Picture</p>
+            </th>
+            <th>
+                <p class="changer">Miles</p>
+            </th>
+            <th>
+                <p class="changer">Value</p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/BMW" class="changer">BMW</a>
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/BMW_M5" class="changer">M5</a>
+            </td>
+            <td class="changer">
+                Black
+            </td>
+            <td class="changer">
+                2022
+            </td>
+            <td>
+                <a href=".//picturesforCars/3gAmxeBP-Ow2JhfQoi6-(edit).jpg"><img src=".//picturesforCars/3gAmxeBP-Ow2JhfQoi6-(edit).jpg" alt="BMW M5" width="100" height="100"></a>
+            </td>
+            <td class="changer">
+                27.758
+            </td>
+            <td class="changer">
+                92.000 $
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Mercedes-Benz" class="changer">Mercedes</a>
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class" class="changer">C-Class</a>
+            </td>
+            <td class="changer">
+                Silver
+            </td>
+            <td class="changer">
+                2007
+            </td>
+            <td>
+                <a href=".//picturesforCars/images.jpg"><img src=".//picturesforCars/images.jpg" alt="C-class" width="100" height="100"></a>
+            </td>
+            <td class="changer">
+                157.000
+            </td>
+            <td class="changer">
+                11.000 $
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Hyundai_Motor_Company" class="changer">Hyundai</a>
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Hyundai_Elantra" class="changer">Elantra</a>
+            </td>
+            <td class="changer">
+                White
+            </td>
+            <td class="changer">
+                2024
+            </td>
+            <td>
+                <a href=".//picturesforCars/Hyundai-Elantra-qpbbq8ocgxj0a1665669d40q59zrw9z3fcgu6kccjk.jpg"><img src=".//picturesforCars/Hyundai-Elantra-qpbbq8ocgxj0a1665669d40q59zrw9z3fcgu6kccjk.jpg" alt="Elantra" width="100" height="100"></a>
+            </td>
+            <td class="changer">
+                0
+            </td>
+            <td class="changer">
+                28.000 $
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Honda" class="changer">Honda</a>
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Honda_Accord" class="changer">Accord</a>
+            </td>
+            <td class="changer">
+                Dark Gray
+            </td>
+            <td class="changer">
+                2018
+            </td>
+            <td>
+                <a href=".//picturesforCars/Honda-Accord-Sport-3.jpg"><img src=".//picturesforCars/Honda-Accord-Sport-3.jpg" alt="Accord" width="100" height="100"></a>
+            </td>
+            <td class="changer">
+                27.000
+            </td>
+            <td class="changer">
+                17.000 $
+            </td>
+        </tr>
+    </table><br><hr>
+    <p style="color: white;" class="changer">SUV</p>
+    <table style="color: red;" border="3px" align="center">
+        <tr>
+            <th class="changer">
+                Brand
+            </th>
+            <th class="changer">
+                Model
+            </th>
+            <th class="changer">
+                Color
+            </th>
+            <th class="changer">
+                Year
+            </th>
+            <th class="changer">
+                Picture
+            </th>
+            <th class="changer">
+                Miles
+            </th>
+            <th class="changer">
+                Value
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Toyota" class="changer">Toyota</a>
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Toyota_Land_Cruiser" class="changer">Land Cruiser</a>
+            </td>
+            <td class="changer">
+                Black
+            </td>
+            <td class="changer">
+                1996
+            </td>
+            <td>
+                <a href=".//picturesforCars/1996-toyota-land-cruiser.jpg"><img src=".//picturesforCars/1996-toyota-land-cruiser.jpg" alt="1996-toyota-land-cruiser" width="100" height="100"></a>
+            </td>
+            <td class="changer">
+                374.000
+            </td>
+            <td class="changer">
+                7.460 $
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/BMW" class="changer">BMW</a>
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/BMW_X5" class="changer">X5</a>
+            </td>
+            <td class="changer">
+                White
+            </td>
+            <td class="changer">
+                2018
+            </td>
+            <td>
+                <a href=".//picturesforCars/X5.jpg"><img src=".//picturesforCars/X5.jpg" alt="x5" width="100" height="100"></a>
+            </td>
+            <td class="changer">
+                0
+            </td>
+            <td class="changer">
+                60.000 $
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Hyundai_Motor_Company" class="changer">Hyundai</a>
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Hyundai_Santa_Fe" class="changer">SantaFe</a>
+            </td>
+            <td class="changer">
+                White
+            </td>
+            <td class="changer">
+                2016
+            </td>
+            <td>
+                <a href=".//picturesforCars/SantaFe.jpg"><img src=".//picturesforCars/SantaFe.jpg" alt="SantaFe" width="100" height="100"></a>
+            </td>
+            <td class="changer">
+                162.000
+            </td>
+            <td class="changer">
+                8.000 $
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Land_Rover" class="changer">Land Rover</a>
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Range_Rover" class="changer">Range Rover</a>
+            </td>
+            <td class="changer">
+                Gray
+            </td>
+            <td class="changer">
+                2026
+            </td>
+            <td>
+                <a href=".//picturesforCars/RangeRover.jpg"><img src=".//picturesforCars/RangeRover.jpg" alt="RangeRover" width="100" height="100"></a>
+            </td>
+            <td class="changer">
+                0
+            </td>
+            <td class="changer">
+                263.000 $
+            </td>
+        </tr>
+    </table>
+    <ul style="color: white;">
+        <li>
+            <p style="color: white;" class="changer">Sedan</p>
+            <ol style="color: white;">
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/BMW_M5" class="changer">BMW M5</a>
+                </li>
+                <li>
+                   <a href="https://en.wikipedia.org/wiki/Mercedes-Benz_C-Class" class="changer">Mercedes C-Class</a>
+                </li>
+                <li>
+                   <a href="https://en.wikipedia.org/wiki/Hyundai_Elantra" class="changer">Hyundai Elantra</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Honda_Accord" class="changer">Honda Accord</a>
+                </li>
+            </ol>
+        </li>
+        <li class="changer">
+            SUV
+            <ol>
+                <li><a href="https://en.wikipedia.org/wiki/Toyota_Land_Cruiser" class="changer">Toyota Land Cruiser</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/BMW_X5" class="changer">BMW X5</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Hyundai_Santa_Fe" class="changer">Hyundai Santafe</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Range_Rover" class="changer">Range Rover</a></li>
+            </ol>
+        </li>
+    </ul>
+    <!-- <div style="text-align: center;">
+        <button onclick="play_pause('video0')">Play\Pause</button>
+        <button onclick="make_small('video0')">Small</button>
+        <button onclick="make_normal('video0')">Normal</button>
+        <button onclick="make_big('video0')">Big</button>
+        <video id="video0" width="450">
+        <source src="./picturesforCars/BMWM5.webm" type="video/webm">
+    </video>
+    </div>
+    <div style="text-align: center;">
+        <button onclick="play_pause('video1')">Play\Pause</button>
+        <button onclick="make_small('video1')">Small</button>
+        <button onclick="make_normal('video1')">Normal</button>
+        <button onclick="make_big('video1')">Big</button>
+        <video id="video1" width="450">
+        <source src="./picturesforCars/mercedesc-class.webm" type="video/webm">
+    </div>
+    <div style="text-align: center;">
+        <button onclick="play_pause('video2')">PLay\Pause</button>
+        <button onclick="make_small('video2')">Small</button>
+        <button onclick="make_normal('video2')">Normal</button>
+        <button onclick="make_big('video2')">Big</button>
+        <video id="video2" width="450">
+        <source src="./picturesforCars/Elantra.webm" type="video/webm">
+    </div>
+    <div style="text-align: center;">
+        <button onclick="play_pause('video3')">PLay\Pause</button>
+        <button onclick="make_small('video3')">Small</button>
+        <button onclick="make_normal('video3')">Normal</button>
+        <button onclick="make_big('video3')">Big</button>
+        <video id="video3" width="450">
+        <source src="./picturesforCars/Accord.webm" type="video/webm">
+    </div>
+    <div style="text-align: center;">
+        <button onclick="play_pause('video4')">PLay\Pause</button>
+        <button onclick="make_small('video4')">Small</button>
+        <button onclick="make_normal('video4')">Normal</button>
+        <button onclick="make_big('video4')">Big</button>
+        <video id="video4" width="450">
+        <source src="./picturesforCars/Land Cruiser.webm" type="video/webm">
+    </div>
+    <div style="text-align: center;">
+        <button onclick="play_pause('video5')">PLay\Pause</button>
+        <button onclick="make_small('video5')">Small</button>
+        <button onclick="make_normal('video5')">Normal</button>
+        <button onclick="make_big('video5')">Big</button>
+        <video id="video5" width="450">
+        <source src="./picturesforCars/x5.webm" type="video/webm">
+    </div>
+    <div style="text-align: center;">
+        <button onclick="play_pause('video6')">PLay\Pause</button>
+        <button onclick="make_small('video6')">Small</button>
+        <button onclick="make_normal('video6')">Normal</button>
+        <button onclick="make_big('video6')">Big</button>
+        <video id="video6" width="450" muted>
+        <source src="./picturesforCars/Santa Fe.webm" type="video/webm">
+    </div>
+    <div style="text-align: center;">
+        <button onclick="play_pause('video7')">PLay\Pause</button>
+        <button onclick="make_small('video7')">Small</button>
+        <button onclick="make_normal('video7')">Normal</button>
+        <button onclick="make_big('video7')">Big</button>
+        <video id="video7" width="450">
+        <source src="./picturesforCars/Range Rover.webm" type="video/webm">
+    </div> -->
+    <div style="text-align:center;">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/OjwV4JqSAw0" 
+        frameborder="0" 
+        allowfullscreen>
+        </iframe>
+    </div>
+    <div style="text-align: center;">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/qyIWAPCH9_o" 
+        frameborder="0" 
+        allowfullscreen>
+        </iframe>
+    </div>
+    <div style="text-align: center;">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/FjiexDgg_2Q" 
+        frameborder="0" 
+        allowfullscreen>
+        </iframe>
+    </div>
+    <div style="text-align: center;">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/9Lx2GmiiKfg" 
+        frameborder="0" 
+        allowfullscreen>
+        </iframe>
+    </div>
+    <div style="text-align: center;">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/i7qMC6TL_IE" 
+        frameborder="0" 
+        allowfullscreen>
+        </iframe>
+    </div>
+    <div style="text-align: center;">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/LgGk1DNVWYI" 
+        frameborder="0" 
+        allowfullscreen>
+        </iframe>
+    </div>
+    <div style="text-align: center;">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/HplvDVJMp3A" 
+        frameborder="0" 
+        allowfullscreen>
+        </iframe>
+    </div>
+    <div style="text-align: center;">
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/AAgyizykugw" 
+        frameborder="0" 
+        allowfullscreen>
+        </iframe>
+    </div>
+
+    <script>
+        
+        function play_pause(videoName) {
+            var video = document.getElementById(videoName)
+            if (video.paused) {
+                video.play();
+            }
+            else {
+                video.pause();
+            }
+        }
+        function make_small(videoName){
+            var video = document.getElementById(videoName);
+            video.width = 250;
+        }
+        function make_normal (videoName) {
+            var video = document.getElementById(videoName)
+            video.width = 450
+        }
+        function make_big (videoName) {
+            var video = document.getElementById(videoName)
+            video.width = 600
+        }    
+        </script>
+
+        <footer style="text-align:center; color:white; margin-top:20px;" class="changer">
+            © <span id="year"></span> AutoVerse
+        </footer>
+
+        <script>
+            document.getElementById("year").innerText = new Date().getFullYear();
+        </script>
+</body>
+</html>
